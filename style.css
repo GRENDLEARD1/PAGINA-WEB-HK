@@ -24,8 +24,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
-    background: rgba(0,0,0,0.5);
+    z-index: 99; 
 }
 
 .logo{
@@ -67,7 +66,8 @@ header{
     width: 130px;
     height: 45px;
     background: transparent;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid 
+    rgb(255, 255, 255);
     outline: none;
     border-radius: 6px;
     cursor: pointer;
@@ -96,6 +96,52 @@ color: rgb(55, 56, 99);
     justify-content: center;
     align-items: center;
 }
-.caja-registro{
-    
+.registro .caja-registro{
+    width: 100%;
+    padding: 40px;
+}
+
+.caja-registro h2{
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.caja-entrada{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(228, 228, 228);
+    margin:  30px 0;
+
+}
+.caja-entrada label {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY( -50% );
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.caja-entrada input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #ffffff;
+
+}
+.caja-entrada .icono{
+    color: #ffffff;
+    position: absolute;
+    left: 100%;
+    top: 39%;
+}
+.caja-entrada input::placeholder{
+    color: rgb(83, 142, 60);
+    font-size: 16px;
+    font-weight: 600;
 }
