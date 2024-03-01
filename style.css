@@ -95,14 +95,39 @@ color: rgb(55, 56, 99);
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease ,height .2s ease;
 }
+.registro.activarbtn{
+    transform: scale(1);
+}
+
 .registro .caja-registro{
     width: 100%;
     padding: 40px;
 }
 
+.registro .icono-cerrar{
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    display: flex;
+    background-color: #c0fb59;
+    font-size: 2em;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
 .caja-registro h2{
-    font-size: 3em;
+    font-size: 2em;
     color: rgb(255, 255, 255);
     text-align: center;
 }
