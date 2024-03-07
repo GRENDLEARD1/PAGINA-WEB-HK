@@ -34,9 +34,9 @@ header{
 }
 
 .navegacion a{
-   position: relative;
-   font-size: 1.1em;
-   color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
@@ -57,7 +57,7 @@ header{
 }
 
 .navegacion a:hover::after{
-   transform-origin:left;
+    transform-origin:left;
     transform: scaleX(1);
 }
 
