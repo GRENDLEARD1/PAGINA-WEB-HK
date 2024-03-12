@@ -229,3 +229,8 @@ color: rgb(55, 56, 99);
     text-decoration: underline;
 
 }
+
+
+.inactive {
+    display: none;
+}
