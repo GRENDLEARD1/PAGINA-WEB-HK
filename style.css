@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: ¨Poppins,sans-serif;
 }
+
+
 body{
     display: flex;
     justify-content: center;
@@ -97,7 +99,7 @@ color: rgb(55, 56, 99);
     align-items: center;
     overflow: hidden;
     transform: scale(0);
-    transition: transform .5s ease ,height .2s ease;
+    transition: transform .5s ease , height .2s ease;
 }
 .registro.activarbtn{
     transform: scale(1);
