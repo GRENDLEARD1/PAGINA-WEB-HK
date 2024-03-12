@@ -1,5 +1,5 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
-    , contact                             ,  containerServices} from './nodes.mjs'
+    , contact, containerHome ,containerServices } from './nodes.mjs'
 
 
 window.addEventListener('hashchange',navigate)
