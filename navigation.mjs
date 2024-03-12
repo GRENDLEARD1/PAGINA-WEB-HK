@@ -1,5 +1,5 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
-    , contact} from './nodes.mjs'
+    , contact,containerHome} from './nodes.mjs'
 
 
 window.addEventListener('hashchange',navigate)
@@ -37,6 +37,7 @@ function homeSection(){
     home.classList.remove('inactive')
     notices.classList.remove('inactive')
     contact.classList.remove('inactive')
+    containerHome.classList.remove('inactive')
     
 }
 

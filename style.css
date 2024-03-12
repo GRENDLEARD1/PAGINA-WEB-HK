@@ -236,3 +236,15 @@ color: rgb(55, 56, 99);
 .inactive {
     display: none;
 }
+
+
+
+/*ESTILO DE HOME */
+
+
+.container-home{
+    display: flex;
+    justify-self: start;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 22%, rgba(9,9,121,1) 52%, rgba(9,9,121,1) 90%);
+}
