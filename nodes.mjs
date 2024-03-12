@@ -5,3 +5,8 @@ export const btnRegistro = document.querySelector('.iniciar-registro p a');
 export const botonLogin = document.querySelector('.btn');
 export const cajaRegistro = document.querySelector('.caja-registro');
 export const form = document.querySelector('form');
+
+export const services = document.querySelector('.services')
+export const home = document.querySelector('.home');
+export const notices = document.querySelector('.notices');
+export const contact = document.querySelector('.contact');
