@@ -13,7 +13,7 @@
     <header>
         <h2 class="logo">Logo</h2>
         <nav class="navegacion">
-            <a href="otros/servicios.html">Servicios</a>
+            <a href="#">Servicios</a>
             <a href="#">Home</a>
             <a href="#">Noticias</a>
             <a href="#">Contactos</a>
@@ -27,13 +27,14 @@
         </span>
 
         <div class="caja-registro"> 
-            <h2>Registro</h2>
-            <form action="#">
+            <h2>Ingresar</h2>
+            <form>
+
                 <div class="caja-entrada">
                     <span class="icono">
                         <ion-icon name="mail"></ion-icon>
                     </span>
-                    <input type="email"required="Email">
+                    <input type="text" required = email>
                     <label>Email</label>
                 </div>
 
@@ -41,7 +42,7 @@
                     <span class="icono">
                         <ion-icon name="lock-closed"></ion-icon>
                     </span>
-                    <input type="contraseña"required>
+                    <input type="password" required>
                     <label>Contraseña</label>
                 </div>
 
@@ -49,18 +50,23 @@
                     <label>
                         <input type="checkbox">Recordarme
                     </label>             
-                    <a href="#">Olvide mi contraseña?</a>
+                    <a>Olvide mi contraseña?</a> <!-- pagina recuperacion contraseña -->
                 </div>
-                <button   button type="submit"class="btn">Iniciar</button>
+                <button type="submit" class="btn">
+                    <p class="btn-text">Iniciar</p>
+                </button>
                 <div class="iniciar-registro">
                     <p>No tienes una cuenta?
-                    <a href="#"class="registro-cuenta">registro</a></p>
+                    <a class="registro-cuenta">Registrate</a>
+                </p>
                 </div>
             </form>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.mjs"></script>
+    <script type="module" src="./navigation.mjs"></script>
+    <script type="module" src="./nodes.mjs"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
