@@ -10,3 +10,10 @@ export const services = document.querySelector('.services')
 export const home = document.querySelector('.home');
 export const notices = document.querySelector('.notices');
 export const contact = document.querySelector('.contact');
+
+
+
+
+
+
+export const containerServices = document.querySelector('.container-services');

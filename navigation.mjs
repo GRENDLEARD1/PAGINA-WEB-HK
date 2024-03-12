@@ -1,5 +1,5 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
-    , contact} from './nodes.mjs'
+    , contact                             ,  containerServices} from './nodes.mjs'
 
 
 window.addEventListener('hashchange',navigate)
@@ -34,6 +34,7 @@ function serviceSection(){
     console.log('services');
     btnp.classList.add('inactive')
 
+
 }
 
 function noticeSection(){
@@ -45,5 +46,5 @@ function noticeSection(){
 function contactSection(){
     console.log('contact');
     btnp.classList.add('inactive')
-
+    containerServices.classList.remove('inactive')
 }
