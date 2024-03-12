@@ -28,12 +28,20 @@ function homeSection(){
     home.classList.remove('inactive')
     notices.classList.remove('inactive')
     contact.classList.remove('inactive')
+    containerHome.classList.remove('inactive')
+    containerServices.classList.add('inactive')
 }
 
 function serviceSection(){
     console.log('services');
     btnp.classList.add('inactive')
+    services.classList.remove('inactive')
+    home.classList.remove('inactive')
+    notices.classList.remove('inactive')
+    contact.classList.remove('inactive')
+    containerHome.classList.add('inactive')
 
+    containerServices.classList.remove('inactive')
 
 }
 
@@ -46,5 +54,4 @@ function noticeSection(){
 function contactSection(){
     console.log('contact');
     btnp.classList.add('inactive')
-    containerServices.classList.remove('inactive')
 }

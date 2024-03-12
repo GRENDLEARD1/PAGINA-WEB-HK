@@ -11,5 +11,5 @@ export const home = document.querySelector('.home');
 export const notices = document.querySelector('.notices');
 export const contact = document.querySelector('.contact');
 
-export const containerServices = document.querySelector('.container-services');
+export const containerServices = document.querySelector('.container-main-services');
 export const containerHome = document.querySelector('.container-home');
