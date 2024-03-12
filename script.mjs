@@ -1,12 +1,21 @@
-import { registro ,btnp, iconClose, btnRegistro, botonLogin,form} from './nodes.mjs'
-
+import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
+    , contact} from './nodes.mjs'
 // ! Event listener
-
 botonLogin.addEventListener('click',function(event) {
     event.preventDefault();
-    location.hash = '#bienvenido'
-    console.log(location.hash);
+
+    console.log('home');
+    btnp.classList.add('inactive')
+    registro.classList.add('inactive')
+    services.classList.add('inactive')
+    home.classList.remove('inactive')
+    notices.classList.remove('inactive')
+    contact.classList.remove('inactive')
+    services.classList.remove('inactive')
+    location.hash = '#home'
+
 })
+
 
 btnp.addEventListener('click', ()=>{
     registro.classList.add('activarbtn');
