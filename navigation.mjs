@@ -31,6 +31,7 @@ function homeSection(){
     contact.classList.remove('inactive')
     containerHome.classList.remove('inactive')
     containerServices.classList.add('inactive')
+    containerNotices.classList.add('inactive')
 }
 
 function serviceSection(){

@@ -7,14 +7,14 @@
 
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+
     background: url("https://th.bing.com/th/id/R.b98405f7ed504f46b3da455d3e992b74?rik=8nLuVhByuJbEug&pid=ImgRaw&r=0")no-repeat;
     background-size: cover;
-    background-position: center;
-
+    background-position: center ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 }
 
 header{
@@ -23,7 +23,7 @@ header{
     left: 0;
     width: 100%;
     height: 100px;
-    padding:20px 100px;
+    padding:20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -241,7 +241,6 @@ header{
 
 
 .container-home{
-    position: absolute;
     width: 90%;
     height: 90vh;
     margin-top: 100px;
@@ -251,6 +250,7 @@ header{
     backdrop-filter: blur(10px);
     color: white;
     line-height: 25px;
+    position: absolute;
 
 }
 
@@ -275,7 +275,6 @@ header{
 .container-services {
     margin-top: 100px;
     width: 100%;
-    height: 90vh;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -286,30 +285,39 @@ header{
     height: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    position: relative;
 }
 
 .container-main--cards{
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     height: 100%;
     padding: 28px;
+
 }
 
 .cards{
     width: 100%;
     background-color: #a1a39c;
-    height: 370px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    height: 380px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: white;
 }
 
 /* ESTILO DE NOTICIAS */
 
 
 .container-notices {
-    margin-top: 100px;
+    margin-top: 90px;
     width: 100%;
     height: 90vh;
     justify-content: center;
@@ -322,4 +330,57 @@ header{
     height: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+}
+
+.cards--title{
+    text-align: center;
+    font-size: 19px;
+    color: #b93e3e;
+    margin-bottom: 10px;
+}
+
+.cards--text{
+    text-align: start;
+    line-height: 21px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.cards--image{
+    margin-top: 20px;
+    width: 230px;
+    max-height: 155px;
+    border-radius: 8px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.cards--link{
+    margin-top: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+    color: #c0fb59;
+    text-decoration: none;
+    position: fixed;
+    bottom: 18px;
+    right: 15px;
+}
+
+.cards--link::after{   
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #c0fb59;
+    border-radius: 5px;
+    transform-origin:right ;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.cards--link:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
 }

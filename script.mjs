@@ -1,5 +1,5 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
-    , contact, containerMainNotices} from './nodes.mjs'
+    , contact, containerHome ,containerServices, containerNotices, containerContacts, containerMainNotices } from './nodes.mjs'
 import { arrayNotices } from './obj.mjs';
 
 // ! Event listener
@@ -56,16 +56,25 @@ export function cards(){
         const title = document.createElement('h2')
         const parrafo = document.createElement('p')
         const image = document.createElement('img')
-        containerCards.classList.add('cards')
+        const link = document.createElement('a')
+        const linkText = document.createTextNode('Leer más')
         const titleText = document.createTextNode(notice.title)
         const parrafoText = document.createTextNode(notice.description)
-
+        image.src = notice.image
+        containerCards.classList.add('cards')
+        title.classList.add('cards--title')
+        parrafo.classList.add('cards--text')
+        image.classList.add('cards--image')
+        link.classList.add('cards--link')
+        link.setAttribute('href', notice.link)
         
         title.appendChild(titleText)
         parrafo.appendChild(parrafoText)
+        link.appendChild(linkText)
         containerCards.appendChild(title)
         containerCards.appendChild(parrafo)
         containerCards.appendChild(image)
+        containerCards.appendChild(link)
         containerMainNotices.appendChild(containerCards)
     })
 
