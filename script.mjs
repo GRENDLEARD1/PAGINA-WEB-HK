@@ -1,5 +1,6 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
-    , contact} from './nodes.mjs'
+    , contact, containerHome ,containerServices } from './nodes.mjs'
+
 // ! Event listener
 botonLogin.addEventListener('click',function(event) {
     event.preventDefault();
@@ -12,6 +13,8 @@ botonLogin.addEventListener('click',function(event) {
     notices.classList.remove('inactive')
     contact.classList.remove('inactive')
     services.classList.remove('inactive')
+    containerHome.classList.add('inactive')
+    containerServices.classList.add('inactive')
     location.hash = '#home'
 
 })

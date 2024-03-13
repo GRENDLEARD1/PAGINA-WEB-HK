@@ -48,10 +48,14 @@ function serviceSection(){
 function noticeSection(){
     console.log('notices');
     btnp.classList.add('inactive')
+    containerHome.classList.add('inactive')
+
 
 }
 
 function contactSection(){
     console.log('contact');
     btnp.classList.add('inactive')
+    containerHome.classList.add('inactive')
+
 }
