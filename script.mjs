@@ -1,5 +1,6 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
-    , contact, containerHome ,containerServices } from './nodes.mjs'
+    , contact, containerMainNotices} from './nodes.mjs'
+import { arrayNotices } from './obj.mjs';
 
 // ! Event listener
 botonLogin.addEventListener('click',function(event) {
@@ -43,5 +44,28 @@ btnRegistro.addEventListener('click', ()=>{
 })
 
 
-// 
+// ! cards function
 
+export function cards(){
+
+    const notices = arrayNotices
+
+    notices.forEach(notice => {
+        const containerCards = document.createElement('div')
+        const title = document.createElement('h2')
+        const parrafo = document.createElement('p')
+        const image = document.createElement('img')
+        containerCards.classList.add('cards')
+        const titleText = document.createTextNode(notice.title)
+        const parrafoText = document.createTextNode(notice.description)
+
+        
+        title.appendChild(titleText)
+        parrafo.appendChild(parrafoText)
+        containerCards.appendChild(title)
+        containerCards.appendChild(parrafo)
+        containerCards.appendChild(image)
+        containerMainNotices.appendChild(containerCards)
+    })
+
+}

@@ -1,5 +1,6 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
-    , contact, containerHome ,containerServices } from './nodes.mjs'
+    , contact, containerHome ,containerServices, containerNotices, containerContacts } from './nodes.mjs'
+import { cards } from './script.mjs'
 
 
 window.addEventListener('hashchange',navigate)
@@ -40,15 +41,23 @@ function serviceSection(){
     notices.classList.remove('inactive')
     contact.classList.remove('inactive')
     containerHome.classList.add('inactive')
-
     containerServices.classList.remove('inactive')
+    containerNotices.classList.add('inactive')
 
 }
 
 function noticeSection(){
     console.log('notices');
     btnp.classList.add('inactive')
+    home.classList.remove('inactive')
+    services.classList.remove('inactive')
+    notices.classList.remove('inactive')
+    contact.classList.remove('inactive')
     containerHome.classList.add('inactive')
+    containerServices.classList.add('inactive')
+    containerNotices.classList.remove('inactive')
+    containerContacts.classList.add('inactive')
+    cards()
 
 
 }
@@ -56,6 +65,13 @@ function noticeSection(){
 function contactSection(){
     console.log('contact');
     btnp.classList.add('inactive')
+    home.classList.remove('inactive')
+    services.classList.remove('inactive')
+    notices.classList.remove('inactive')
+    contact.classList.remove('inactive')
     containerHome.classList.add('inactive')
+    containerServices.classList.add('inactive')
+    containerNotices.classList.add('inactive')
+    containerContacts.classList.remove('inactive')
 
 }
