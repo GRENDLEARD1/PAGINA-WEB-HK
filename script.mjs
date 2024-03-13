@@ -14,6 +14,8 @@ botonLogin.addEventListener('click',function(event) {
     notices.classList.remove('inactive')
     contact.classList.remove('inactive')
     services.classList.remove('inactive')
+    containerHome.classList.add('inactive')
+    containerServices.classList.add('inactive')
     location.hash = '#home'
 
 })
