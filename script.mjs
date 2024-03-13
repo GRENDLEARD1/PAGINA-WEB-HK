@@ -46,6 +46,7 @@ btnRegistro.addEventListener('click', ()=>{
 
 export function cards(){
 
+    containerMainNotices.innerHTML = ''
     const notices = arrayNotices
 
     notices.forEach(notice => {
