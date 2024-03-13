@@ -267,4 +267,22 @@ color: rgb(55, 56, 99);
     width: 95%;
     height: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+   
+}
+
+.container-main--cards{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    height: 100%;
+    padding: 28px;
+}
+
+.cards{
+    width: 100%;
+    background-color: #a1a39c;
+    height: 370px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
