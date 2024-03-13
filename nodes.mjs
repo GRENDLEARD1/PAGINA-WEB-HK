@@ -1,5 +1,5 @@
 export const registro = document.querySelector('.registro');
-export const btnp = document.querySelector('.botonderegistro');
+export const btnp = document.querySelector('    .botonderegistro');
 export const iconClose = document.querySelector('.icono-cerrar');
 export const btnRegistro = document.querySelector('.iniciar-registro p a');
 export const botonLogin = document.querySelector('.btn');
@@ -11,5 +11,7 @@ export const home = document.querySelector('.home');
 export const notices = document.querySelector('.notices');
 export const contact = document.querySelector('.contact');
 
-export const containerServices = document.querySelector('.container-main-services');
+export const containerServices = document.querySelector('.container-services');
 export const containerHome = document.querySelector('.container-home');
+export const containerNotices = document.querySelector('.container-notices');
+export const containerContacts = document.querySelector('.container-contacts');
