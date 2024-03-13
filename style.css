@@ -81,8 +81,8 @@ header{
 }
 
 .navegacion .botonderegistro:hover{
-background: azure;
-color: rgb(55, 56, 99);
+    background: azure;
+    color: rgb(55, 56, 99);
 }
 
 .registro{
@@ -243,8 +243,30 @@ color: rgb(55, 56, 99);
 
 .container-home{
     position: absolute;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 22%, rgba(9,9,121,1) 52%, rgba(9,9,121,1) 90%);
+    width: 90%;
+    height: 90vh;
+    margin-top: 100px;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    line-height: 25px;
+
+}
+
+
+.container-welcome h1 {
+    margin-bottom: 30px;
+}
+
+.container-welcome p {
+    color: white;
+}
+
+.container-benefits h2, .container-compromise h2{
+    margin: 30px 0 30px 0;
+
 }
 
 
@@ -261,7 +283,6 @@ color: rgb(55, 56, 99);
 }
 
 .container-main-services {
-    background: #ffffffce;
     width: 95%;
     height: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
@@ -283,4 +304,23 @@ color: rgb(55, 56, 99);
     height: 370px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+/* ESTILO DE NOTICIAS */
+
+
+.container-notices {
+    margin-top: 100px;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.container-main-notices {
+    width: 95%;
+    height: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
