@@ -15,11 +15,11 @@ export const containerHome = document.querySelector('.container-home');
 // Services 
 export const services = document.querySelector('.services')
 export const containerServices = document.querySelector('.container-services');
+export const containerMainServices = document.querySelector('.container-main-services .container-main--cards');
 
 // Notices
 export const notices = document.querySelector('.notices');
 export const containerNotices = document.querySelector('.container-notices');
-
 export const containerMainNotices = document.querySelector('.container-main-notices .container-main--cards')
 
 // Contacts

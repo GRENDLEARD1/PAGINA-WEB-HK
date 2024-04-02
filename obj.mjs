@@ -38,5 +38,34 @@ export let arrayNotices = [
         image: 'https://th.bing.com/th/id/OIP.93rVDiHIfDzy4sbL-xz3oQHaE6?w=240&h=180&c=7&r=0&o=5&cb=11&pid=1.7',
         link: 'https://immune.institute/blog/4-claves-de-la-seguridad-cibernetica/#:~:text=%C2%BFCu%C3%A1les%20son%20los%20puntos%20primordiales%20para%20garantizar%20la,seguridad%20cibern%C3%A9tica%20recorriendo%20el%20camino%20al%20rev%C3%A9s.%20'
     },
-    
+]
+
+
+
+
+export let arrayServices =[
+    {
+        title: "Asesoramiento y Consultoría en Ciberseguridad",
+        description: "Ofrecer servicios de consultoría para evaluar la seguridad informática, identificar vulnerabilidades y desarrollar estrategias de seguridad adaptadas a las necesidades específicas de los clientes."
+    },
+    {
+        title: "Auditorías de Seguridad",
+        description: "Realizar auditorías de seguridad para evaluar la eficacia de las medidas de seguridad existentes y recomendar mejoras."
+    },
+    {
+        title: "Pruebas de Penetración (Penetration Testing)",
+        description: "Realizar pruebas de penetración éticas para identificar y explotar vulnerabilidades en sistemas, redes o aplicaciones con el fin de mejorar la seguridad."
+    },
+    {
+        title: "Monitoreo y Detección de Amenazas",
+        description: "Proporcionar servicios de monitoreo continuo de la red y detección de amenazas para identificar y responder rápidamente a posibles ataques cibernéticos."
+    },
+    {
+        title: "Gestión de Incidentes de Seguridad",
+        description: "Ayudar a las organizaciones a desarrollar y ejecutar planes de respuesta a incidentes para mitigar el impacto de posibles violaciones de seguridad."
+    },
+    {
+        title: "Formación y Concienciación en Ciberseguridad",
+        description: "Ofrecer programas de formación y concienciación en ciberseguridad para educar a los empleados sobre las mejores prácticas de seguridad informática y reducir el riesgo de ataques basados en el factor humano."
+    },
 ]

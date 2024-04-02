@@ -1,6 +1,6 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
     , contact, containerHome ,containerServices, containerNotices, containerContacts } from './nodes.mjs'
-import { cards } from './script.mjs'
+import { cardsNotices, cardsServices } from './script.mjs'
 
 
 window.addEventListener('hashchange',navigate)
@@ -46,7 +46,7 @@ function serviceSection(){
     containerServices.classList.remove('inactive')
     containerNotices.classList.add('inactive')
     containerContacts.classList.add('inactive')
-
+    cardsServices()
 
 }
 
@@ -61,7 +61,7 @@ function noticeSection(){
     containerServices.classList.add('inactive')
     containerNotices.classList.remove('inactive')
     containerContacts.classList.add('inactive')
-    cards()
+    cardsNotices()
 
 
 }

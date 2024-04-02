@@ -1,6 +1,7 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
-    , contact, containerHome ,containerServices, containerNotices, containerContacts, containerMainNotices } from './nodes.mjs'
+    , contact, containerHome ,containerServices, containerNotices, containerContacts, containerMainNotices, containerMainServices } from './nodes.mjs'
 import { arrayNotices } from './obj.mjs';
+import { arrayServices } from './obj.mjs';
 
 // ! Event listener
 botonLogin.addEventListener('click',function(event) {
@@ -46,7 +47,7 @@ btnRegistro.addEventListener('click', ()=>{
 
 // ! cards function
 
-export function cards(){
+export function cardsNotices(){
 
     containerMainNotices.innerHTML = ''
     const notices = arrayNotices
@@ -78,4 +79,36 @@ export function cards(){
         containerMainNotices.appendChild(containerCards)
     })
 
+}
+
+export function cardsServices() {
+    containerMainServices.innerHTML = ''
+    const services = arrayServices
+
+    services.forEach(service =>{
+        const containerCards = document.createElement('div')
+        const title = document.createElement('h2')
+        const parrafo = document.createElement('p')
+        const image = document.createElement('img')
+        const link = document.createElement('a')
+        const linkText = document.createTextNode('Leer más')
+        const titleText = document.createTextNode(service.title)
+        const parrafoText = document.createTextNode(service.description)
+        image.src = service.image
+        containerCards.classList.add('cards')
+        title.classList.add('cards--title')
+        parrafo.classList.add('cards--text')
+        image.classList.add('cards--image')
+        link.classList.add('cards--link')
+        link.setAttribute('href', service.link)
+        
+        title.appendChild(titleText)
+        parrafo.appendChild(parrafoText)
+        link.appendChild(linkText)
+        containerCards.appendChild(title)
+        containerCards.appendChild(parrafo)
+        containerCards.appendChild(image)
+        containerCards.appendChild(link)
+        containerMainServices.appendChild(containerCards)
+    }) 
 }

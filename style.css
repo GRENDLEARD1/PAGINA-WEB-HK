@@ -54,8 +54,7 @@ header{
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: rgb(36, 36, 36);
-
+    background:#c0fb59;
     border-radius: 5px;
     transform-origin:right ;
     transform: scaleX(0);
@@ -235,7 +234,6 @@ header{
 
 .iniciar-registro p a:hover {
     text-decoration: underline;
-
 }
 
 
@@ -243,51 +241,7 @@ header{
     display: none;
 }
 
-/*ESTILO DE HOME */
-
-
-.container-home{
-    width: 90%;
-    height: 85vh;
-    padding: 28px;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    color: white;
-    line-height: 25px;
-    position: relative;
-    margin-top: 100px;
-}
-
-
-.container-welcome h1 {
-    margin-bottom: 30px;
-}
-
-.container-welcome p {
-    color: white;
-}
-
-.container-benefits h2, .container-compromise h2{
-    margin: 30px 0 30px 0;
-
-}
-
-
-
-/* ESTILO DE SERVICES */
-
-.container-services {
-    width: 100%;
-    margin-top: 100px;
-}
-
-.container-main-services {
-    width: 95%;
-    height: 100%;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-}
+/* CARDS */
 
 .container-main--cards{
     display: grid;
@@ -300,7 +254,6 @@ header{
 
 .cards{
     width: 100%;
-    background-color: #a1a39c;
     background-color: transparent;
     backdrop-filter: blur(30px);
     height: 380px;
@@ -311,22 +264,6 @@ header{
     flex-direction: column;
     align-items: end;
     color: white;
-}
-
-/* ESTILO DE NOTICIAS */
-
-
-.container-notices {
-    width: 100%;
-    height: 80%;
-    margin-top: 100px;
-}
-
-.container-main-notices {
-    width: 95%;
-    height: 100%;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
 }
 
 .cards--title{
@@ -380,6 +317,69 @@ header{
 .cards--link:hover::after{
     transform-origin:left;
     transform: scaleX(1);
+}
+
+/*ESTILO DE HOME */
+
+
+.container-home{
+    width: 90%;
+    height: 85vh;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    line-height: 25px;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+.container-welcome h1 {
+    margin-bottom: 30px;
+}
+
+.container-welcome p {
+    color: white;
+}
+
+.container-benefits h2, .container-compromise h2{
+    margin: 30px 0 30px 0;
+
+}
+
+/* ESTILO DE SERVICES */
+
+.container-services {
+    width: 100%;
+    height: 80%;
+    margin-top: 100px;
+}
+
+
+.container-main-services {
+    width: 95%;
+    height: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+
+/* ESTILO DE NOTICIAS */
+
+
+.container-notices {
+    width: 100%;
+    height: 80%;
+    margin-top: 100px;
+}
+
+.container-main-notices {
+    width: 95%;
+    height: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 /*  ESTILOS DE CONTACTOS */
