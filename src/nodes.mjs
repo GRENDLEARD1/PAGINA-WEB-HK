@@ -25,4 +25,5 @@ export const containerMainNotices = document.querySelector('.container-main-noti
 // Contacts
 export const contact = document.querySelector('.contact');
 export const containerContacts = document.querySelector('.container-contacts');
+export const contactMainContacts = document.querySelector('.container-main-contacts');
 

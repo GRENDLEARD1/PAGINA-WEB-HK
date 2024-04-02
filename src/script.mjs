@@ -1,7 +1,5 @@
-import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
-    , contact, containerHome ,containerServices, containerNotices, containerContacts, containerMainNotices, containerMainServices } from './nodes.mjs'
-import { arrayNotices } from './obj.mjs';
-import { arrayServices } from './obj.mjs';
+import { registro ,btnp, iconClose, btnRegistro, botonLogin,services, home, notices, contact, containerHome ,containerServices, containerNotices, containerContacts, containerMainNotices, containerMainServices, contactMainContacts } from './nodes.mjs'
+import { arrayContacts, arrayNotices,arrayServices } from './obj.mjs';
 
 // ! Event listener
 botonLogin.addEventListener('click',function(event) {
@@ -114,3 +112,35 @@ export function cardsServices() {
         containerMainServices.appendChild(containerCards)
     }) 
 }
+
+export function CardsContacts (){
+    contactMainContacts.innerHTML = ''
+    const contacts = arrayContacts
+
+    contacts.forEach(contact =>{
+        const card = document.createElement('div');
+        card.classList.add('contact-card');
+    
+        const titulo = document.createElement('h2');
+        titulo.textContent = contact.nombre;
+    
+        const telefono = document.createElement('p');
+        telefono.innerHTML = `<strong>Teléfono:</strong> ${contact.telefono}`;
+    
+        const correo = document.createElement('p');
+        correo.innerHTML = `<strong>Correo:</strong> <span>${contact.correo}</span>`;
+    
+        card.appendChild(titulo);
+        card.appendChild(telefono);
+        card.appendChild(correo);
+    
+        contactMainContacts.appendChild(card);
+        
+    })
+}
+
+// <div class="contact-card">
+// <h2>Soporte Técnico</h2>
+// <p><strong>Teléfono:</strong> +1-800-123-4567</p>
+// <p><strong>Correo:</strong> <span>soporte@ciberseguridad.com</span></p>
+// </div>

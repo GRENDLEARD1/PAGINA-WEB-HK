@@ -1,6 +1,6 @@
 import { registro ,btnp, iconClose, btnRegistro, botonLogin,form, cajaRegistro,services, home, notices
     , contact, containerHome ,containerServices, containerNotices, containerContacts } from './nodes.mjs'
-import { cardsNotices, cardsServices } from './script.mjs'
+import { cardsNotices, cardsServices, CardsContacts } from './script.mjs'
 
 
 window.addEventListener('hashchange',navigate)
@@ -77,5 +77,5 @@ function contactSection(){
     containerServices.classList.add('inactive')
     containerNotices.classList.add('inactive')
     containerContacts.classList.remove('inactive')
-
+    CardsContacts()
 }
