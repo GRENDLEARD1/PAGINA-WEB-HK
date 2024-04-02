@@ -262,7 +262,7 @@ header{
     padding: 12px;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     color: white;
 }
 
@@ -281,12 +281,13 @@ header{
 }
 
 .cards--image{
-    margin-top: 20px;
+    position: absolute;
     width: 230px;
     max-height: 140px;
     border-radius: 8px;
     margin: 0 auto;
     object-fit: cover;
+    bottom: 45px;
 }
 
 .cards--link{

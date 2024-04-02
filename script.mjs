@@ -68,6 +68,7 @@ export function cardsNotices(){
         image.classList.add('cards--image')
         link.classList.add('cards--link')
         link.setAttribute('href', notice.link)
+        link.target = '_blank'
         
         title.appendChild(titleText)
         parrafo.appendChild(parrafoText)
@@ -101,6 +102,7 @@ export function cardsServices() {
         image.classList.add('cards--image')
         link.classList.add('cards--link')
         link.setAttribute('href', service.link)
+        link.target = '_blank'
         
         title.appendChild(titleText)
         parrafo.appendChild(parrafoText)
